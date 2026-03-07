@@ -1,0 +1,101 @@
+/* Zmienne – tu zmieniasz główny kolor strony */
+:root {
+  --kolor-glowny: #2563eb;
+  --kolor-tlo: #f8fafc;
+  --kolor-tekst: #1e293b;
+  --kolor-przycisk: #2563eb;
+  --kolor-przycisk-hover: #1d4ed8;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--kolor-tlo);
+  color: var(--kolor-tekst);
+  margin: 0;
+  padding: 2rem;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--kolor-glowny);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--kolor-glowny);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.o-mnie p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.obrazek {
+  text-align: center;
+}
+
+.obrazek img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.licznik {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.licznik p {
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+
+#licznik {
+  font-weight: 700;
+  color: var(--kolor-glowny);
+}
+
+#przycisk {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--kolor-przycisk);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#przycisk:hover {
+  background-color: var(--kolor-przycisk-hover);
+}
+
+#przycisk:active {
+  transform: scale(0.98);
+}
