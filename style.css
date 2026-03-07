@@ -1,6 +1,6 @@
 /* Zmienne – tu zmieniasz główny kolor strony */
 :root {
-  --kolor-glowny: #2563eb;
+  --kolor-glowny: #8b4d44;
   --kolor-tlo: #f8fafc;
   --kolor-tekst: #1e293b;
   --kolor-przycisk: #2563eb;
@@ -98,4 +98,20 @@ h2 {
 
 #przycisk:active {
   transform: scale(0.98);
+}
+
+/* Nawigacja między stronami */
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: var(--kolor-glowny);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
